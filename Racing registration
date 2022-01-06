@@ -1,0 +1,14 @@
+let raceNumber = Math.floor(Math.random() * 1000);
+var earlyRegister = true;
+var age = 17 ;
+if (earlyRegister && age > 18) {raceNumber += 1000};
+
+//this code takes the racer's number if higher than the designated racing numbers and prints their racing time.
+if (raceNumber >= 1000) 
+  { console.log(`Racer ${raceNumber}, you will race at 9:30 am.`)}
+else if (!earlyRegister && age > 18) 
+  {console.log(`Racer ${raceNumber}, you will race at 11:00 am.`)}
+else if (age < 18 ) 
+  {console.log(`Racer ${raceNumber} you will race at 12:30 pm.`)}
+else
+  {console.log('Report to the registration desk!')}
